@@ -2,6 +2,14 @@ import { NavLink } from 'react-router-dom';
 import banner from '../../../assets/bannerimg.jpg'
 import { GoDownload } from "react-icons/go";
 const Banner = () => {
+    const handleFileDownload = () => {
+        const link = document.createElement('a');
+        link.href = 'http://localhost:5000/download/6685246052b86f950ad2f9ac'; 
+        link.setAttribute('download', 'Hafsa_Rashid_Web_Developer_Resume.pdf');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      };
     return (
         <div className="h-[550px]"  style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(${banner})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
 
@@ -13,7 +21,7 @@ const Banner = () => {
 
                     <div className='flex gap-8'>
                     <NavLink>
-                        <button className='px-4 py-2 border-2 border-[#548AA3] text-[#548AA3] bg-white font-medium hover:bg-[#548AA3] hover:text-white flex items-center'>Download Resume    <GoDownload /></button>
+                        <button className='px-4 py-2 border-2 border-[#548AA3] text-[#548AA3] bg-white font-medium hover:bg-[#548AA3] hover:text-white flex items-center' onClick={handleFileDownload}>Download Resume    <GoDownload /></button>
 
                     </NavLink>
                     <NavLink to='/about'>
@@ -31,3 +39,5 @@ const Banner = () => {
 };
 
 export default Banner;
+
+

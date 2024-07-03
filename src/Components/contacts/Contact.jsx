@@ -72,7 +72,7 @@ const Contact = () => {
                     Email: <span className="text-blue-700">hafsa.cse7.bu@gmail.com</span><br />
                     Phone: +880 1838551941
                 </p>
-                <div className="mt-6 flex justify-center space-x-4">
+                <div className="mt-6 flex  space-x-4">
                     <button onClick={openLinkedIn}>
                         <FaLinkedin className="w-8 h-8 cursor-pointer" />
                     </button>
