@@ -2,18 +2,20 @@
 import eduConnect from '../../assets/edu.png';
 import resty from '../../assets/resty.png';
 import artNest from '../../assets/art.png';
-
+import banner from '../../assets/bg.jpg'
 const Projects = () => {
     const openModal = (id) => {
         document.getElementById(id).showModal();
     };
 
     return (
-        <div className="container mx-auto my-14">
-            <h1 className="mb-16 text-4xl font-medium text-center text-[#548AA3]">___My Projects___</h1>
-            <div className="flex items-center justify-center gap-10">
+        <div className='h-[550px] ' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(${banner})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            
+            <div className=" container mx-auto">
+            <h1 className="mb-16 py-8 text-4xl font-medium text-center text-[#548AA3]">___My Projects___</h1>
+            <div className="grid grid-cols-3 gap-4 px-10">
                 <div 
-                    className="relative w-96 h-60 shadow-2xl bg-cover bg-center cursor-pointer" 
+                    className="relative  h-60 shadow-2xl bg-cover bg-center cursor-pointer" 
                     style={{ backgroundImage: `url(${eduConnect})`, backgroundSize: 'cover', backgroundPosition: 'center' }} 
                     onClick={() => openModal('modal_eduConnect')}
                 >
@@ -22,7 +24,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div 
-                    className="relative w-96 h-60 shadow-2xl bg-cover bg-center cursor-pointer" 
+                    className="relative  h-60 shadow-2xl bg-cover bg-center cursor-pointer" 
                     style={{ backgroundImage: `url(${resty})`, backgroundSize: 'cover', backgroundPosition: 'center' }} 
                     onClick={() => openModal('modal_restY')}
                 >
@@ -30,10 +32,8 @@ const Projects = () => {
                         <div className="text-white text-2xl font-bold">RestY</div>
                     </div>
                 </div>
-            </div>
-            <div className="flex justify-center mt-8">
                 <div 
-                    className="relative w-96 h-60 shadow-2xl bg-cover bg-center cursor-pointer" 
+                    className="relative  h-60 shadow-2xl bg-cover bg-center cursor-pointer" 
                     style={{ backgroundImage: `url(${artNest})`, backgroundSize: 'cover', backgroundPosition: 'center' }} 
                     onClick={() => openModal('modal_artNest')}
                 >
@@ -42,6 +42,9 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
+            {/* <div className="flex justify-center mt-8">
+                
+            </div> */}
 
             {/* Modals */}
             <dialog id="modal_eduConnect" className="modal">
@@ -70,8 +73,8 @@ const Projects = () => {
                     </ul>
                     <h4 className="font-bold text-md">Technologies Used</h4>
                     <ul className="list-disc list-inside py-2">
-                        <li>Frontend: Tanstack Query for efficient data fetching, JWT implementation for secure authentication, and responsive design for optimal user experience.</li>
-                        <li>Backend: Node.js with Express.js for robust server-side operations, MongoDB for flexible and scalable data storage, and middleware for role-based access control.</li>
+                        <li>Frontend: HTML, Tailwind CSS, React.js, JavaScript,Tanstack Query, JWT implementation</li>
+                        <li>Backend: Node.js with Express.js, MongoDB, and middleware </li>
                         <li>Integration: Social login integration using Google and GitHub OAuth for seamless user authentication.</li>
                     </ul>
                 </div>
@@ -142,6 +145,7 @@ const Projects = () => {
                     </ul>
                 </div>
             </dialog>
+        </div>
         </div>
     );
 };

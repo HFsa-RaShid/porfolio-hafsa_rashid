@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import banner from '../../../assets/bannerimg.jpg'
+import banner from '../../../assets/portfolio web banner.jpg'
 import { GoDownload } from "react-icons/go";
 const Banner = () => {
     const handleFileDownload = () => {
@@ -39,5 +39,4 @@ const Banner = () => {
 };
 
 export default Banner;
-
 

@@ -19,7 +19,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="fixed top-1/2 right-0 transform -translate-y-1/2">
+        <div className="fixed top-1/2 right-0 transform -translate-y-1/2 z-10">
             <NavLink 
                 to='/' 
                 exact
@@ -30,7 +30,7 @@ const Navbar = () => {
             >
                 <IoHomeOutline />
                 {tooltipText === 'Home' && (
-                    <div className="absolute right-full transform -translate-x-1 bg-gray-800 text-white px-2 py-1 shadow-lg z-10">
+                    <div className="absolute right-full bg-[#548AA3] text-white px-3 py-4 shadow-lg z-10">
                         {tooltipText}
                     </div>
                 )}
@@ -44,7 +44,7 @@ const Navbar = () => {
             >
                 <RiContactsLine />
                 {tooltipText === 'About' && (
-                    <div className="absolute right-full transform -translate-x-1 bg-gray-800 text-white px-2 py-1 shadow-lg z-10">
+                    <div className="absolute right-full  bg-[#548AA3] text-white px-3 py-4 shadow-lg z-10">
                         {tooltipText}
                     </div>
                 )}
@@ -58,7 +58,7 @@ const Navbar = () => {
             >
                 <GoProjectSymlink />
                 {tooltipText === 'Projects' && (
-                    <div className="absolute right-full transform -translate-x-1 bg-gray-800 text-white px-2 py-1 shadow-lg z-10">
+                    <div className="absolute right-full bg-[#548AA3] text-white px-3 py-4 shadow-lg z-10">
                         {tooltipText}
                     </div>
                 )}
@@ -72,7 +72,7 @@ const Navbar = () => {
             >
                 <TfiEmail />
                 {tooltipText === 'Contact' && (
-                    <div className="absolute right-full transform -translate-x-1 bg-gray-800 text-white px-2 py-1 shadow-lg z-10">
+                    <div className="absolute right-full bg-[#548AA3] text-white px-3 py-4 shadow-lg z-10">
                         {tooltipText}
                     </div>
                 )}

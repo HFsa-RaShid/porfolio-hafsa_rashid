@@ -23,9 +23,9 @@ const Footer = () => {
   <nav>
     <div className="grid grid-flow-col gap-4">
       
-      <div className="mt-6 flex justify-center space-x-4">
+      <div className=" flex justify-center space-x-4">
                     <button onClick={openLinkedIn}>
-                        <FaLinkedin className="w-8 h-8 cursor-pointer" />
+                        <FaLinkedin className="w-8 h-8 cursor-pointer text-[#3168df]" />
                     </button>
                     <button onClick={openGitHub}>
                         <FaGithub className="w-8 h-8 cursor-pointer" />

@@ -6,7 +6,7 @@ import { PiGraduationCap } from "react-icons/pi";
 
 const About = () => {
     return (
-        <div className="container mx-auto my-14 ">
+        <div className="container mx-auto my-8 ">
             <h1 className="mb-16 text-4xl font-medium text-center text-[#548AA3]">___About Me___</h1>
             <div className="flex gap-20 px-20">
                 <div className="w-[60%]">
