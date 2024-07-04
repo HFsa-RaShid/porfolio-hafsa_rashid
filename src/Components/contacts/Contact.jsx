@@ -5,7 +5,9 @@ import Swal from "sweetalert2";
 import { AiOutlineMail } from "react-icons/ai";
 import { LuPhone } from "react-icons/lu";
 import { Helmet } from "react-helmet-async";
-
+import { Typewriter } from "react-simple-typewriter";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const Contact = () => {
     const openLinkedIn = () => {
@@ -43,7 +45,7 @@ const Contact = () => {
                     timer: 1500
                 });
 
-                // Reset the form after successful submission
+                
                 event.target.reset();
             } else {
                 Swal.fire({
@@ -62,17 +64,38 @@ const Contact = () => {
         }
     };
 
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
+
     return (
-        <div className="container mx-auto  py-8 px-16">
+        <div className="container mx-auto  py-8 px-4 md:px-16">
             <Helmet>
-                <title>Contact</title>
+                <title>Contact | Hafsa_Rashid</title>
             </Helmet>
-            <h1 className="mb-8 text-4xl font-medium text-center text-[#548AA3]">___Get In Touch___</h1>
+
+            <div className='App '>
+                <h1 className="mb-8 text-4xl font-medium text-center text-[#38657a]" >
+                    {'___'}
+                    <span>
+                        <Typewriter
+                            words={['Get In Touch___']}
+                            loop={true}
+                            cursor
+                            cursorStyle='|'
+                            typeSpeed={100}
+                            deleteSpeed={50}
+                            delaySpeed={1000}
+                        />
+                    </span>
+                </h1>
+            </div>
+            {/* <h1 className="mb-8 text-4xl font-medium text-center text-[#548AA3]">___Get In Touch___</h1> */}
             
-            <div className="flex flex-col md:flex-row  items-center">
+            <div className="lg:flex flex-col md:flex-row  items-center">
                 {/* Contact Form */}
-                <div className="w-full md:w-1/2 p-6">
-                    <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
+                <div className="w-full lg:w-1/2 p-6" data-aos="fade-right">
+                    <form className="bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
                         <div className="mb-4">
                             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
                                 Name
@@ -136,7 +159,7 @@ const Contact = () => {
                     </form>
                 </div>
 
-                <div className="">
+                <div className="" data-aos="fade-left">
                     <p className="text-xl font-semibold">
                         Have questions or feedback?
                     </p>

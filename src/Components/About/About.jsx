@@ -3,17 +3,39 @@ import { LuCornerDownRight } from "react-icons/lu";
 import { FaGraduationCap } from "react-icons/fa";
 import { PiGraduationCap } from "react-icons/pi";
 import { Helmet } from "react-helmet-async";
-
+import { Typewriter } from "react-simple-typewriter";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const About = () => {
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
     return (
-        <div className="container mx-auto my-8 ">
+        <div className="container mx-auto my-4 " >
             <Helmet>
-                <title>About</title>
+                <title>About | Hafsa_Rashid</title>
             </Helmet>
-            <h1 className="mb-16 text-4xl font-medium text-center text-[#548AA3]">___About Me___</h1>
-            <div className="flex gap-20 px-20">
-                <div className="w-[60%]">
+            
+            <div className='App '>
+                <h1 className="mb-16 py-6 text-4xl font-medium text-center text-[#38657a]" >
+                    {'___'}
+                    <span>
+                        <Typewriter
+                            words={['About___']}
+                            loop={true}
+                            cursor
+                            cursorStyle='|'
+                            typeSpeed={100}
+                            deleteSpeed={50}
+                            delaySpeed={1000}
+                        />
+                    </span>
+                </h1>
+            </div>
+            {/* <h1 className="mb-16 text-4xl font-medium text-center text-[#548AA3]">___About Me___</h1> */}
+            <div className="md:flex md:gap-8 lg:gap-20 px-4 md:px-10 lg:px-20" data-aos="zoom-in-up">
+                <div className="md:w-[60%]">
                     <h1 className="text-2xl font-semibold pb-8">Personal Information</h1>
                     <div className="flex items-center gap-4">
                     <LuCornerDownRight className='text-[#548AA3] text-2xl'/>
@@ -42,13 +64,13 @@ const About = () => {
                     <LuCornerDownRight className='text-[#548AA3] text-2xl'/>
                     <p className="text-xl  py-2">Technical Experience: N/A </p>
                     </div>
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-4 mb-4">
                     <LuCornerDownRight className='text-[#548AA3] text-2xl'/>
                     <p className="text-xl  py-2">Language: Bangla, English, Hindi </p>
                     </div>
  
                 </div>
-                <div className="w-[40%]">
+                <div className="md:w-[40%]">
                     <h1 className="text-2xl font-semibold">Education</h1>
                         <ul className="steps steps-vertical">
                         <li>

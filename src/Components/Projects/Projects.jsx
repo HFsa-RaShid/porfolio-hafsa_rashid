@@ -4,19 +4,45 @@ import resty from '../../assets/resty.png';
 import artNest from '../../assets/art.png';
 import banner from '../../assets/bg.jpg'
 import { Helmet } from 'react-helmet-async';
+import { Typewriter } from 'react-simple-typewriter';
+import { useEffect } from 'react';
+import AOS from "aos";
+
 const Projects = () => {
     const openModal = (id) => {
         document.getElementById(id).showModal();
     };
 
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
+
     return (
-        <div className='h-[550px] ' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(${banner})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+
+        
+        <div className='md:h-[550px] pb-10' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(${banner})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <Helmet>
-                <title>Projects</title>
+                <title>Projects | Hafsa_Rashid</title>
             </Helmet>
             <div className=" container mx-auto">
-            <h1 className="mb-16 py-8 text-4xl font-medium text-center text-[#548AA3]">___My Projects___</h1>
-            <div className="grid grid-cols-3 gap-4 px-10">
+            <div className='App '>
+                <h1 className="mb-16 py-8 text-4xl font-medium text-center text-[#38657a]" >
+                    {'___'}
+                    <span>
+                        <Typewriter
+                            words={['Projects___']}
+                            loop={true}
+                            cursor
+                            cursorStyle='|'
+                            typeSpeed={100}
+                            deleteSpeed={50}
+                            delaySpeed={1000}
+                        />
+                    </span>
+                </h1>
+            </div>
+            {/* <h1 className="mb-16 py-8 text-4xl font-medium text-center text-[#548AA3]">___My Projects___</h1> */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-10" data-aos="fade-left">
                 <div 
                     className="relative  h-60 shadow-2xl bg-cover bg-center cursor-pointer" 
                     style={{ backgroundImage: `url(${eduConnect})`, backgroundSize: 'cover', backgroundPosition: 'center' }} 
