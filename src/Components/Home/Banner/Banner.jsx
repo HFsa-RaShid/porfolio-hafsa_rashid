@@ -21,8 +21,8 @@ const Banner = () => {
 
             <div className='md:flex justify-between'>
                 <div className='w-[60%] lg:w-[50%] px-3 md:p-8 lg:p-20 pt-4 md:pt-10 lg:mt-16 '>
-                    <h1 className='text-xl md:text-3xl lg:text-5xl font-bold pb-2'>I'm <span className='text-[#548AA3]'>Hafsa Rashid</span></h1>
-                    <p className='text-[#548AA3] text-[12px] md:text-xl pb-4 font-medium'>Web Developer</p>
+                    <h1 className='text-2xl md:text-3xl lg:text-5xl font-bold pb-2 text-black'>I'm <span className='text-[#548AA3]'>Hafsa Rashid</span></h1>
+                    <p className='text-[#548AA3] text-[16px] md:text-xl pb-4 font-medium'>Web Developer</p>
                     <p className='pb-4 text-[10px] md:text-[16px] '>A motivated undergraduate student exploring the dynamic world of web development. I thrive on crafting intuitive, efficient web applications that enhance user experiences. With a strong foundation in modern technologies and a commitment to growth, I'm eager to contribute to impactful projects and push the boundaries of what's possible in web development.</p>
 
                     <div className='lg:flex gap-8 '>

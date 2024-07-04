@@ -13,7 +13,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="footer footer-center bg-[#D9EDED] text-base-content rounded px-10 py-6">
+        <footer className="footer footer-center bg-[#D9EDED] rounded px-10 py-6 text-black">
   <nav className="grid grid-flow-col gap-4">
     <NavLink to='about' className="link link-hover">About Me</NavLink>
     <NavLink to='contact' className="link link-hover">Contact</NavLink>

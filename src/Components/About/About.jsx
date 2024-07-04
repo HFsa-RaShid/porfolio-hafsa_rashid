@@ -12,7 +12,7 @@ const About = () => {
         AOS.init({ duration: 2000 });
     }, []);
     return (
-        <div className="container mx-auto my-4 " >
+        <div className=" py-4 bg-white" >
             <Helmet>
                 <title>About | Hafsa_Rashid</title>
             </Helmet>
@@ -34,7 +34,7 @@ const About = () => {
                 </h1>
             </div>
             {/* <h1 className="mb-16 text-4xl font-medium text-center text-[#548AA3]">___About Me___</h1> */}
-            <div className="md:flex md:gap-8 lg:gap-20 px-4 md:px-10 lg:px-20" data-aos="zoom-in-up">
+            <div className="container mx-auto text-black bg-white md:flex md:gap-8 lg:gap-20 px-4 md:px-10 lg:px-20" data-aos="zoom-in-up">
                 <div className="md:w-[60%]">
                     <h1 className="text-2xl font-semibold pb-8">Personal Information</h1>
                     <div className="flex items-center gap-4">

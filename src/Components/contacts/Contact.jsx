@@ -69,7 +69,7 @@ const Contact = () => {
     }, []);
 
     return (
-        <div className="container mx-auto  py-8 px-4 md:px-16">
+        <div className="bg-white  py-8 px-4 md:px-16">
             <Helmet>
                 <title>Contact | Hafsa_Rashid</title>
             </Helmet>
@@ -92,7 +92,7 @@ const Contact = () => {
             </div>
             {/* <h1 className="mb-8 text-4xl font-medium text-center text-[#548AA3]">___Get In Touch___</h1> */}
             
-            <div className="lg:flex flex-col md:flex-row  items-center">
+            <div className=" container mx-auto lg:flex flex-col md:flex-row  items-center">
                 {/* Contact Form */}
                 <div className="w-full lg:w-1/2 p-6" data-aos="fade-right">
                     <form className="bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
@@ -101,7 +101,7 @@ const Contact = () => {
                                 Name
                             </label>
                             <input 
-                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-black bg-gray-100 leading-tight focus:outline-none focus:shadow-outline" 
                                 id="name" 
                                 name="name"
                                 type="text" 
@@ -114,7 +114,7 @@ const Contact = () => {
                                 Email
                             </label>
                             <input 
-                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-black bg-gray-100 leading-tight focus:outline-none focus:shadow-outline" 
                                 id="email" 
                                 name="email"
                                 type="email" 
@@ -127,7 +127,7 @@ const Contact = () => {
                                 Subject
                             </label>
                             <input 
-                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-black bg-gray-100 leading-tight focus:outline-none focus:shadow-outline" 
                                 id="subject" 
                                 name="subject"
                                 type="text" 
@@ -140,7 +140,7 @@ const Contact = () => {
                                 Message
                             </label>
                             <textarea 
-                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                                className="shadow appearance-none border rounded w-full py-2 px-3 text-black bg-gray-100 leading-tight focus:outline-none focus:shadow-outline" 
                                 id="message" 
                                 name="message"
                                 rows="5" 

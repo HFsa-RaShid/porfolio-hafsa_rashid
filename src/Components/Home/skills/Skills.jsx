@@ -33,7 +33,7 @@ const Skills = () => {
             </div>
             {/* <h1 className='text-2xl md:text-4xl text-center font-semibold pb-8 text-[#38657a]'>___Skills Overview___</h1> */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 ">
-                <div className="h-[300px] bg-white rounded-lg shadow-2xl px-2  hover:p-8 hover:h-[320px]">
+                <div className="h-[300px] bg-white rounded-lg shadow-2xl px-2  hover:p-8 hover:h-[320px] border">
                     <div className='flex gap-4 items-center'>
                         <img src={frontend} className='w-[80px] h-[80px]' alt="Front-End" />
                         <p className='text-xl font-semibold'>Front-End</p>
@@ -57,7 +57,7 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
-                <div className="h-[300px] bg-white rounded-lg shadow-2xl px-2  hover:p-8 hover:h-[320px]">
+                <div className="h-[300px] bg-white rounded-lg shadow-2xl px-2  hover:p-8 hover:h-[320px] border">
                     <div className='flex gap-4 items-center'>
                         <img src={backend} className='w-[80px] h-[80px]' alt="Back-End" />
                         <p className='text-xl font-semibold'>Back-End</p>
@@ -73,7 +73,7 @@ const Skills = () => {
                         </div>
                     </div>
                 </div>
-                <div className="h-[300px] bg-white rounded-lg shadow-2xl px-2  hover:p-8 hover:h-[320px]">
+                <div className="h-[300px] bg-white rounded-lg shadow-2xl px-2  hover:p-8 hover:h-[320px] border">
                     <div className='flex gap-4 items-center'>
                         <img src={others} className='w-[80px] h-[80px]' alt="Others" />
                         <p className='text-xl font-semibold'>Others</p>
