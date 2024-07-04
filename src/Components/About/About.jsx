@@ -18,7 +18,7 @@ const About = () => {
             </Helmet>
             
             <div className='App '>
-                <h1 className="mb-16 py-6 text-4xl font-medium text-center text-[#38657a]" >
+                <h1 className="mb-10 py-6 text-4xl font-medium text-center text-[#38657a]" >
                     {'___'}
                     <span>
                         <Typewriter

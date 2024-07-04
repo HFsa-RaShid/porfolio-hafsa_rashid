@@ -5,7 +5,7 @@ import { FaChevronCircleRight } from "react-icons/fa";
 const Banner = () => {
     const handleFileDownload = () => {
         const link = document.createElement('a');
-        link.href = 'http://localhost:5000/download/6685246052b86f950ad2f9ac'; 
+        link.href = 'https://portfolio-hafsa-rashid.vercel.app/download/6685246052b86f950ad2f9ac'; 
         link.setAttribute('download', 'Hafsa_Rashid_Web_Developer_Resume.pdf');
         document.body.appendChild(link);
         link.click();
