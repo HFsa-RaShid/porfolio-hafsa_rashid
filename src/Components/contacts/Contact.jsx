@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import Swal from "sweetalert2";
 import { AiOutlineMail } from "react-icons/ai";
 import { LuPhone } from "react-icons/lu";
+import { Helmet } from "react-helmet-async";
 
 
 const Contact = () => {
@@ -62,10 +63,13 @@ const Contact = () => {
     };
 
     return (
-        <div className="container mx-auto my-4 p-8">
+        <div className="container mx-auto  py-8 px-16">
+            <Helmet>
+                <title>Contact</title>
+            </Helmet>
             <h1 className="mb-8 text-4xl font-medium text-center text-[#548AA3]">___Get In Touch___</h1>
             
-            <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex flex-col md:flex-row  items-center">
                 {/* Contact Form */}
                 <div className="w-full md:w-1/2 p-6">
                     <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit}>
@@ -132,10 +136,11 @@ const Contact = () => {
                     </form>
                 </div>
 
-                <div className=" px-4">
-                    <p className="text-lg ">
-                        Have questions or feedback? Feel free to get in touch with me. I'd love to hear from you!
+                <div className="">
+                    <p className="text-xl font-semibold">
+                        Have questions or feedback?
                     </p>
+                    <p className="text-xl font-semibold"> Feel free to get in touch with me. I'd love to hear from you!</p>
                     <p className="text-lg mt-4">
                     <div className='flex items-center gap-2'>
                     <AiOutlineMail />

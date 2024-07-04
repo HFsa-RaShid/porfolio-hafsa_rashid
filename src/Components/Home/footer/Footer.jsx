@@ -13,7 +13,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="footer footer-center bg-[#D9EDED] text-base-content rounded p-10">
+        <footer className="footer footer-center bg-[#D9EDED] text-base-content rounded px-10 py-6">
   <nav className="grid grid-flow-col gap-4">
     <NavLink to='about' className="link link-hover">About Me</NavLink>
     <NavLink to='contact' className="link link-hover">Contact</NavLink>
@@ -34,7 +34,7 @@ const Footer = () => {
     </div>
   </nav>
   <aside>
-    <p>Copyright © ${new Date().getFullYear()} - All right reserved by Hafsa rashid</p>
+    <p>Copyright © ${new Date().getFullYear()} - All right reserved by Hafsa Rashid</p>
   </aside>
 </footer>
     );

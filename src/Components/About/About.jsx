@@ -2,11 +2,15 @@
 import { LuCornerDownRight } from "react-icons/lu";
 import { FaGraduationCap } from "react-icons/fa";
 import { PiGraduationCap } from "react-icons/pi";
+import { Helmet } from "react-helmet-async";
 
 
 const About = () => {
     return (
         <div className="container mx-auto my-8 ">
+            <Helmet>
+                <title>About</title>
+            </Helmet>
             <h1 className="mb-16 text-4xl font-medium text-center text-[#548AA3]">___About Me___</h1>
             <div className="flex gap-20 px-20">
                 <div className="w-[60%]">

@@ -3,6 +3,7 @@ import eduConnect from '../../assets/edu.png';
 import resty from '../../assets/resty.png';
 import artNest from '../../assets/art.png';
 import banner from '../../assets/bg.jpg'
+import { Helmet } from 'react-helmet-async';
 const Projects = () => {
     const openModal = (id) => {
         document.getElementById(id).showModal();
@@ -10,7 +11,9 @@ const Projects = () => {
 
     return (
         <div className='h-[550px] ' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(${banner})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-            
+            <Helmet>
+                <title>Projects</title>
+            </Helmet>
             <div className=" container mx-auto">
             <h1 className="mb-16 py-8 text-4xl font-medium text-center text-[#548AA3]">___My Projects___</h1>
             <div className="grid grid-cols-3 gap-4 px-10">
