@@ -26,7 +26,7 @@ const Contact = () => {
             subject: event.target.subject.value,
             message: event.target.message.value,
         };
-
+        
         try {
             const response = await fetch('https://portfolio-hafsa-rashid.vercel.app/contact', {
                 method: 'POST',
@@ -167,7 +167,7 @@ const Contact = () => {
                     <p className="text-lg mt-4">
                     <div className='flex items-center gap-2'>
                     <AiOutlineMail />
-                     <p className="text-blue-700">hafsa.cse7.bu@gmail.com</p><br />
+                     <p className="text-blue-700">hafsarashid028@gmail.com</p><br />
                     </div>
                     <div className='flex items-center gap-2'>
                     <LuPhone />

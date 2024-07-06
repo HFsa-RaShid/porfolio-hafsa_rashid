@@ -44,11 +44,11 @@ const About = () => {
                     </div>
                     <div className="flex items-center gap-4 ">
                     <LuCornerDownRight className='text-[#548AA3] text-2xl'/>
-                    <p className="text-xl py-2">Address: Farida Monjil, Sagordi, Barishal Sadar, barishal-8200, Bangladesh</p>
+                    <p className="text-xl py-2">Address: Barishal, Bangladesh</p>
                     </div>
                     <div className="flex items-center gap-4">
                     <LuCornerDownRight className='text-[#548AA3] text-2xl'/>
-                    <p className="text-xl  py-2">Email: <span className="text-blue-700 hover:underline">hafsa.cse7.bu@gmail.com</span> </p>
+                    <p className="text-xl  py-2">Email: <span className="text-blue-700 hover:underline">hafsarashid028@gmail.com</span> </p>
 
                     </div>
                     <div className="flex items-center gap-4">
