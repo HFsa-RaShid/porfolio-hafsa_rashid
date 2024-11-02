@@ -9,10 +9,11 @@ import { FaChevronCircleRight } from "react-icons/fa";
 
 const Banner = () => {
     // const [file, setFile] = useState(null);
-
+    // https://portfolio-hafsa-rashid.vercel.app
     const handleFileDownload = () => {
+        
         const link = document.createElement('a');
-        link.href = 'https://portfolio-hafsa-rashid.vercel.app/download/66897f48f0508281a5c8baff';
+        link.href = 'https://portfolio-hafsa-rashid.vercel.app/download/672618d18d36bffd14044d61';
         link.setAttribute('download', 'Hafsa_Rashid_Web_Developer_Resume.pdf');
         document.body.appendChild(link);
         link.click();
@@ -70,6 +71,7 @@ const Banner = () => {
                             </button>
                         </NavLink>
                     </div>
+                    {/* comment start */}
 
                     {/* <div className='mt-4'>
                         <input type="file" onChange={handleFileChange} />
@@ -77,6 +79,7 @@ const Banner = () => {
                             Upload File
                         </button>
                     </div> */}
+                    {/* comment end */}
                 </div>
             </div>
         </div>
